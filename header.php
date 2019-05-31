@@ -34,7 +34,8 @@
 <?php foreach ($categorias as $categoria):?>
 <li class="col-md-2"><?=$categoria?> </li>
     <?php endforeach; ?>
-
+    
 <ul/>
 </nav>
 </header>
+

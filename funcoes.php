@@ -11,3 +11,4 @@ function addProduto($nome, $descricao, $preco, $img, $produtos){
     $produtos ["produto$chave"] = $novoProduto; 
     return $produtos;
 }
+
