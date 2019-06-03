@@ -1,6 +1,6 @@
 <?php
 
-include "funcoes.php";
+include_once "funcoes.php";
 
 $usuario= logarUsuario("Ana Baccarin", 1);
 $usuario = ["logado"=> true, "nome" => "Ana Baccarin", "nivelAcesso" => 0]; 
