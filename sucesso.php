@@ -1,7 +1,6 @@
 <?php 
 include_once "funcoes.php";
 
-
 function validarCompra($dadosCompras){
     $erros = [];
     if(!$dadosCompras){
@@ -33,7 +32,6 @@ function validarCompra($dadosCompras){
 
 <body>
     <?php include "header.php";?>
-
   
     <main class="container">
         <section class="row">

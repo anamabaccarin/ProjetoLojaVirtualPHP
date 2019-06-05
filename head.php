@@ -6,6 +6,14 @@ $usuario= logarUsuario("Ana Baccarin", 1);
 $usuario = ["logado"=> true, "nome" => "Ana Baccarin", "nivelAcesso" => 0]; 
 //$usuario = "";
 
+$jsonProdutos = file_get_contents('Produtos.json');
+$produtos = json_decode ($jsonProdutos, true);
+$produtos = $produtos['Produtos'];
+
+addProduto("Curso Mobile Android", "Curso para criar app", 2200, "img/imagem1.jpg");
+$categorias = ["Cursos", "Categorias", "Artigos", "Foruns", "Códigos"];
+
+/* ANTES DE TER JSON(linha 9 até 12) , USAMOS ESSA ESTRUTURA:
 $produtos = [
     "produto1" => ["nome" => "Curso Fullstack", "descricao" => "Para aprender programação", "preco" => 1200, "img" => "./img/imagem1.jpg"],
     "produto2" => ["nome" => "Curso Mobile", "descricao" => "Para aprender a fazer apps", "preco" => 1400, "img" => "./img/imagem1.jpg"],
@@ -14,8 +22,7 @@ $produtos = [
      ];
 
 $produtos = addProduto("Curso X", "Curso inédito", 2000, 'img/imagem2.jpg',$produtos);
-
-$categorias = ["Cursos", "Categorias", "Artigos", "Foruns", "Códigos"]
+*/
 ?>
 <head>
     <meta charset="UTF-8">

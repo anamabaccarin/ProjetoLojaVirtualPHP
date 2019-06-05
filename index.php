@@ -7,7 +7,7 @@
 <main class="container mt-5">
     <section class="row">
     <!--Coluna para segurar Card-->
-        <?php   foreach($produtos as $chave=>$value) : ?>
+        <?php foreach($produtos as $chave=>$value) : ?>
         <div class="col-md-4 mt-3">
             <div class="card" style="width: 18rem;">
                 <img src="<?php echo $value ["img"] ?>" class="card-img-top" alt="...">
@@ -16,7 +16,7 @@
                   <p class="card-text"> <?php echo $value ["descricao"]; ?></p>
                   <h4  class="text-success">R$ <?php echo $value ["preco"]; ?></h4>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#<?php echo $chave; ?>"> Comprar </button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#<?php echo $value['id']; ?>"> Comprar </button>
                 </div>
             </div>
         </div>
@@ -24,8 +24,8 @@
     </section>
 </main>
 <!-- Modal -->
-<?php   foreach($produtos as $chave=>$produto):?> 
-<div class="modal fade" id="<?php echo $chave; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<?php foreach($produtos as $chave=>$produto):?> 
+<div class="modal fade" id="<?php echo $produto['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
