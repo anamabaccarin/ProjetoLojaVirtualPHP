@@ -1,5 +1,4 @@
 <?php
-
 include_once "funcoes.php";
 
 $usuario= logarUsuario("Ana Baccarin", 1);
@@ -10,7 +9,6 @@ $jsonProdutos = file_get_contents('Produtos.json');
 $produtos = json_decode ($jsonProdutos, true);
 $produtos = $produtos['Produtos'];
 
-addProduto("Curso Mobile Android", "Curso para criar app", 2200, "img/imagem1.jpg");
 $categorias = ["Cursos", "Categorias", "Artigos", "Foruns", "Códigos"];
 
 /* ANTES DE TER JSON(linha 9 até 12) , USAMOS ESSA ESTRUTURA:
