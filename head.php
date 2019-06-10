@@ -6,7 +6,7 @@ $usuario = ["logado"=> true, "nome" => "Ana Baccarin", "nivelAcesso" => 0];
 //$usuario = "";
 
 $jsonProdutos = file_get_contents('Produtos.json');
-$produtos = json_decode ($jsonProdutos, true);
+$produtos = json_decode($jsonProdutos, true);
 $produtos = $produtos['Produtos'];
 
 $categorias = ["Cursos", "Categorias", "Artigos", "Foruns", "Códigos"];

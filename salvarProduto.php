@@ -16,6 +16,7 @@ echo '<a class="btn btn-primary" href="cadastroProduto.php"> Voltar para cadastr
 exit;
 }
 
+
 $imgAceitas = ["image/png", "image/jpg", "image/jpeg"];
 $erroEnvio = $_FILES['arquivo']['error'];
 $nomeProduto=$_POST['nomeProduto'];
