@@ -5,7 +5,7 @@ $usuario = isset($_SESSION['usuario'])?$_SESSION['usuario']:"";
 //$usuario = ["logado"=> true, "nome" => "Ana Baccarin", "nivelAcesso" => 0]; substituída pela linha 4 $usuario=isset.....com essa linha que foi retirada, o nome do usuario ficaria sempre com o mesmo usuario.
 //$usuario = "";
 
-$jsonProdutos = file_get_contents('Produtos.json');
+$jsonProdutos = file_get_contents('produtos.json');
 $produtos = json_decode($jsonProdutos, true);
 $produtos = $produtos['Produtos'];
 
